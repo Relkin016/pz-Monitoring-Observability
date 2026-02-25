@@ -1,7 +1,5 @@
 # Practical lesson pz-Monitoring-Observability
-# Практична реалізація моніторингу та спостережуваності (Monitoring & Observability)
-
----
+> Практична реалізація моніторингу та спостережуваності (Monitoring & Observability)
 
 ## 📌 Опис практичного заняття
 
@@ -13,8 +11,6 @@
 - моніторинг стану системи
 - алертинг
 - візуалізацію показників
-
----
 
 ## 🎯 Мета заняття
 
@@ -28,11 +24,7 @@
 3. Реалізувати механізм алертингу при зупинці сервісу.
 4. Побудувати дашборд для візуалізації стану системи.
 
----
-
-# 🛠 What need to do:
-
-## 1️⃣ Розгортання сервісів
+## 🛠 What need to do:
 
 ### 1.1 Створити структуру проєкту
 
@@ -51,8 +43,6 @@ pz-Monitoring-Observability/
 ├── docker-compose.yaml
 └── README.md
 ```
-
----
 
 ### 1.2 Реалізувати сервіси
 
@@ -74,8 +64,6 @@ pz-Monitoring-Observability/
   - `service/webapi/status`
   - `alerts/service-status`
 
----
-
 ## 2️⃣ Налаштування моніторингу
 
 ### Варіант A — Zabbix
@@ -85,7 +73,6 @@ pz-Monitoring-Observability/
 - Додати хост
 - Налаштувати тригер на зупинку контейнера
 
----
 
 ### Варіант B — Prometheus + Grafana
 
@@ -140,9 +127,7 @@ pz-Monitoring-Observability/
   - Чи зафіксована подія на дашборді?
   - Чи надійшло повідомлення?
 
----
-
-# ✅ Acceptance criteria
+## ✅ Acceptance criteria
 
 Робота вважається виконаною, якщо:
 
@@ -159,9 +144,7 @@ pz-Monitoring-Observability/
 - Опис архітектури
 - Скріншоти дашборду
 
----
-
-# 📚 Самостійна робота
+## 📚 Самостійна робота
 
 1. Додати Healthcheck у docker-compose.
 2. Налаштувати restart policy.
@@ -172,9 +155,7 @@ pz-Monitoring-Observability/
   - Error rate
 5. Реалізувати моніторинг MQTT topic.
 
----
-
-# 📎 Очікуваний результат
+## 📎 Очікуваний результат
 
 Студент повинен продемонструвати:
 - Розуміння різниці між Monitoring та Observability
@@ -187,9 +168,8 @@ pz-Monitoring-Observability/
 - Чи зафіксована подія на дашборді?
 - Чи надійшло повідомлення?
 
----
 
-# Самостійна робота
+## Самостійна робота
 
 1. Додати логування (наприклад Loki + Grafana).
 2. Реалізувати Healthcheck у docker-compose.
@@ -200,9 +180,8 @@ pz-Monitoring-Observability/
 - Error rate
 5. Реалізувати централізований збір логів.
 
----
 
-# Useful links
+## Useful links
 
 [Comparing Grafana Loki and Elastic stack](https://medium.com/@artemgontar16/the-grafana-loki-and-elastic-stack-are-both-powerful-tools-used-for-log-management-and-analysis-2a017b4212aa)
 [Grafana Loki vs. ELK Stack: The Modern Logging Showdown](https://medium.com/@mdportnov/grafana-loki-vs-elk-stack-the-modern-logging-showdown-a85a4c3e0f34)
