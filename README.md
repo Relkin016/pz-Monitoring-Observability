@@ -219,9 +219,9 @@ pz-Monitoring-Observability/
 
 # Useful links
 
-- Docker
-- Docker Compose
-- Prometheus
-- Grafana
-- Zabbix
-- Eclipse Mosquitto  
+[Comparing Grafana Loki and Elastic stack](https://medium.com/@artemgontar16/the-grafana-loki-and-elastic-stack-are-both-powerful-tools-used-for-log-management-and-analysis-2a017b4212aa)
+[Grafana Loki vs. ELK Stack: The Modern Logging Showdown](https://medium.com/@mdportnov/grafana-loki-vs-elk-stack-the-modern-logging-showdown-a85a4c3e0f34)
+[Спостережуваність vs Моніторинг: що насправді важливо](https://careers.epam.ua/blog/observability-vs-monitoring-what-really-matters-for-system-reliability)
+[Prometheus vs Grafana: Top Differences](https://www.geeksforgeeks.org/devops/prometheus-vs-grafana/)
+[Observability and Monitoring in DevOps: A Comprehensive Guide](https://medium.com/@shuubham.pawar.368/observability-and-monitoring-in-devops-a-comprehensive-guide-d8ca302a918b)
+[Site Reliability Engineering (SRE) explained](https://blog.invgate.com/site-reliability-engineering)
