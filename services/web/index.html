@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Monitor</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        .status { padding: 20px; border-radius: 5px; display: inline-block; }
+        .online { background-color: #d4edda; color: #155724; }
+        .offline { background-color: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+<h1>Статус системи</h1>
+<div id="status-box" class="status">Перевірка...</div>
+
+<script>
+    async function checkStatus() {
+        const box = document.getElementById('status-box');
+        try {
+            // Звертаємося до WebAPI через проксі Nginx
+            const response = await fetch('/api/health');
+            const data = await response.json();
+
+            box.innerText = `WebAPI: ${data.status}`;
+            box.className = 'status online';
+        } catch (error) {
+            box.innerText = 'WebAPI: Offline';
+            box.className = 'status offline';
+        }
+    }
+    checkStatus();
+    setInterval(checkStatus, 5000); // Оновлення кожні 5 сек
+</script>
+</body>
+</html>
