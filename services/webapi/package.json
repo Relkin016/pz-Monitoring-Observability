@@ -1,0 +1,11 @@
+{
+  "name": "webapi",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prom-client": "^15.1.0",
+    "mqtt": "^5.3.0",
+    "morgan": "^1.10.0"
+  }
+}
